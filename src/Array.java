@@ -20,33 +20,58 @@ public class Array {
         String[] arrays2 = new String[]{"Hi", "World", "Z"};
 
         //task2
-        System.out.println(Arrays.stream(arrays0)
-                        .sorted()
-                .mapToObj(String::valueOf)
-                .collect(Collectors.joining(", ")));
 
-        System.out.println(Arrays.stream(arrays1)
-                .mapToObj(String::valueOf)
-                .collect(Collectors.joining(", ")));
-
-        System.out.println(String.join(", ", arrays2));
+        for(int k=0;k<3;k++){
+            if(k!=2){
+                System.out.print(arrays0[k]+",");
+            }else{
+                System.out.print(arrays0[k]);
+            }
+        }
+        System.out.println("\n");
+        for(int k=0;k<3;k++){
+            if(k!=2){
+                System.out.print(arrays1[k]+",");
+            }else{
+                System.out.print(arrays1[k]);
+            }
+        }
+        System.out.println("\n");
+        for(int k=0;k<3;k++){
+            if(k!=2){
+                System.out.print(arrays2[k]+",");
+            }else{
+                System.out.print(arrays2[k]);
+            }
+        }
+        System.out.println("\n");
 
         //task3
 
-        System.out.println(Arrays.stream(arrays0)
-                .sorted()
-                .mapToObj(String::valueOf)
-                        .sorted(Collections.reverseOrder())
-                .collect(Collectors.joining(", ")));
-
-        System.out.println(Arrays.stream(arrays1)
-                .mapToObj(String::valueOf)
-                .sorted(Collections.reverseOrder())
-                .collect(Collectors.joining(", ")));
-
-        System.out.println(Arrays.stream(arrays2)
-                .sorted(Collections.reverseOrder())
-                .collect(Collectors.joining(", ")));
+        for(int k=2;k>=0;k--){
+            if(k!=0){
+                System.out.print(arrays0[k]+",");
+            }else{
+                System.out.print(arrays0[k]);
+            }
+        }
+        System.out.println("\n");
+        for(int k=2;k>=0;k--){
+            if(k!=0){
+                System.out.print(arrays1[k]+",");
+            }else{
+                System.out.print(arrays1[k]);
+            }
+        }
+        System.out.println("\n");
+        for(int k=2;k>=0;k--){
+            if(k!=0){
+                System.out.print(arrays2[k]+",");
+            }else{
+                System.out.print(arrays2[k]);
+            }
+        }
+        System.out.println("\n");
 
 
         //task4
